@@ -1,4 +1,4 @@
-var quotes [
+var quotes = [
     {quote: 'you miss 100 perscent of the shotes you dont take.', source: 'Wayne Gretzky'},
     {quote: 'To be the man, you must beat the man.', source: 'Ric Flair'},
     {quote: 'Without self-discipline, success is impossible, period.', source: 'Lou Holtz'},
@@ -7,13 +7,13 @@ var quotes [
 ];
 
 function getRandomQuote () {
-    var randomQuote = math.floor( Math.random() * quotes.length) +1;
+    var randomQuote = Math.floor( Math.random() * quotes.length);
     return randomQuote; 
 }
 
-function PrintQuote () {
-    var printq = getRandomQuote(quotes.quote(source));
-    
+function printQuote () {
+    var printq = getRandomQuote(quotes.quote);
+    return printq;
 
 }
 
